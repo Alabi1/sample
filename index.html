@@ -1,0 +1,238 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form</title>
+
+    <style>
+    html, body {
+      min-height: 100%;
+      text-align: center;
+      }
+
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+      text-align: center;
+      }
+
+      #form-whole{
+          display: inline-block;
+          width:98%;
+          margin-top: 20px;
+          border-radius: 6px;
+        background: #fff;
+        box-shadow: 0 0 30px 0 #666; 
+      }
+   .form{
+       
+       line-height: 2px;
+       padding: 10px;
+       font-size: 20px;
+       background-color:;
+   }
+
+   #title{
+       font-family: "Open Sans Condensed" sans-serif;
+       font-size: 30px;
+       margin: 0 0 0;
+       padding: 20px 30px;
+       text-transform: uppercase;
+      
+   }
+
+   #description{
+       border-bottom: 1px solid #111;
+       margin: 0 120px 0 120px;
+      
+   }
+
+   
+
+   #survey-form{
+       
+       display: inline-block;
+       width: 85%;
+       border: 1px solid #111;
+       background-color:  rgba(39, 39, 71, 0.2);
+   }
+
+   .nen{
+    width: 98%;
+    padding-left: 9px;
+   }
+
+   .nen p{
+    
+    text-align: left;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+   }
+
+   .nen input, .nen select {
+       border-radius: 6px;
+       border: 1px solid #ccc;
+       margin-bottom:10px;
+       width: 100%;
+       height: 30px;
+       text-align: left;
+       padding-left: 5px;
+   }
+
+    
+   .required{
+       color:red;
+   }
+
+   #check{
+       text-align: left;
+       padding-left: 12px;
+       width: 100%;
+       font-size: 15px;
+       font-weight: bold;
+       display: flex;
+       flex-direction: row;
+       
+       margin-left: -50px ;
+       
+      
+   }
+
+   .question-answer{
+       margin-left: 20px;
+       text-align: left;
+       display: flex;
+       flex-direction: row;
+   }
+
+   #check input{
+    border-radius: 6px;
+       border: 1px solid #ccc;
+       margin-bottom:10px;
+       text-align: left;
+       margin-left:50px;
+       height: 20px;
+       width: 100px;
+       
+   }
+
+   .question-answer input{
+    width: 100px;
+    
+    
+   }
+
+  
+
+   input[type=radio]{
+       width: 12px;
+       height: 12px;
+       
+   }
+
+   span{
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 50px;
+   
+   }
+  
+   textarea{
+       width:100%;
+       height: 200px;
+   }
+  
+      
+    
+    </style>
+    </head>
+
+         <body>
+            <div id="form-whole">
+                <div class="form">
+            <h1 id="title">Membership Form</h1>
+                        
+                <p id="description">Do you want to become a member of our club? Then start by filling our form to complete registration. We will contact you shortly to notify you about your membership card.</p>
+            </div>
+                <form id="survey-form">
+                    <div class="nen">
+                    <label id="name-label">
+                    <div id="name">
+                        <p>Name<span class="required">*</span></p>
+                        <input type="text" name="name" placeholder="Enter Full Name" class="long" required/>
+                    </div>
+                    </label>
+
+                    <label id="email-label">
+                    <div id="email">
+                        <p>Email<span class="required">*</span></p>
+                        <input type="email" name="email" placeholder="Enter Email" class="long" required/>
+                    </div>
+                    </label>  
+
+                    <label id="number-label">
+                    <div id="number">
+                        
+                        <p>Age</p>
+                        <input type="number" name="number" placeholder="Enter Age" min="18" max="90" class="long"/>
+                    </div>
+                    </label>    
+                
+                    <div id="dropdown">
+                    <p>Which best describes your occupation?</p>
+                    <select>
+                            <option value="">Select Occupation</option>
+                            <option value="1">Business</option>
+                            <option value="2">Civil Servent</option>
+                            <option value="3">Student</option>
+                            <option value="4">Military</option>
+                            <option value="5">Retired</option>
+                    </select>
+                    </div>
+                </div>
+                    <div>
+                    <div class="nen"> 
+                    <p>Which of the Countries have you been to?</p>
+                    </div>
+                    <div id="check">
+                    <input type="checkbox" name="country" value="Nigeria"/>Nigeria<br/>
+                    <input type="checkbox" name="country" value="Ghana"/>Ghana<br/>
+                    <input type="checkbox" name="country" value="USA"/>USA<br/>
+                    <input type="checkbox" name="country" value="England"/>England<br/>
+                    <input type="checkbox" name="country" value="Canada"/>Canada<br/>
+                    <input type="checkbox" name="country" value="Spain"/>Spain<br/>
+                    <input type="checkbox" name="country" value="None"/>None<br/>
+                    </div>
+                    </div>
+               
+                    
+                   
+                    <div class="nen">
+                    <p>Gender</p>
+                    <div class="question-answer">
+                        <label><input type="radio" value="none" name="gender" required/> <span>Male</span><br/></label>
+                         <label><input type="radio" value="none" name="gender" required/> <span>Female</span></label>
+                        </div>
+                        </div>
+
+                    <div class="nen">
+                        <p>Why do yo want to join this club?</p>
+                        <textarea rows="5" cols="20" placeholder="Enter Text here...."></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit"/>
+                    </div>
+                        
+                      </form>
+                    </div>
+                  </body>
+    
